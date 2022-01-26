@@ -1,0 +1,92 @@
+<div class="container my-5">
+  <h1 class="text-center text-muted mb-4">Add Blogs</h1>
+  <form>
+    <div class="row my-3 p-3">
+      <div class="col">
+        <label for="">Blog Image Url *</label>
+        <input
+          [(ngModel)]="addBlogData.blogImg"
+          name="blogImg"
+          type="url"
+          class="form-control"
+          required
+        />
+      </div>
+      <div class="col">
+        <label for="">Blog Title *</label>
+        <input
+          [(ngModel)]="addBlogData.blogTitle"
+          name="blogTitle"
+          type="text"
+          class="form-control"
+          placeholder="Blog Title"
+          required
+        />
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="row my-3 p-3">
+      <div class="col">
+        <label for="">Blog Text *</label>
+        <textarea
+          [(ngModel)]="addBlogData.blogText"
+          name="blogText"
+          id=""
+          cols="30"
+          rows="10"
+          class="form-control"
+          required
+        ></textarea>
+      </div>
+      <div class="col">
+        <label for="">Blogger Image Url *</label>
+        <input
+          [(ngModel)]="addBlogData.bloggerImg"
+          name="bloggerImg"
+          type="url"
+          class="form-control"
+          placeholder="Blogger Image"
+          required
+        />
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="row my-3 p-3">
+      <div class="col">
+        <label for="">Blogger Name *</label>
+        <input
+          [(ngModel)]="addBlogData.bloggerName"
+          name="bloggerName"
+          type="text"
+          class="form-control"
+          placeholder="Blogger Name"
+          required
+        />
+      </div>
+      <div class="col">
+        <label for="">Blogger Job *</label>
+        <input
+          [(ngModel)]="addBlogData.bloggerJob"
+          name="bloggerJob"
+          type="text"
+          class="form-control"
+          placeholder="Blogger Job"
+          required
+        />
+      </div>
+    </div>
+    <button
+      (click)="addBlog()"
+      type="button"
+      class="btn btn-success btn-block mt-5"
+    >
+      Add Blog
+    </button>
+  </form>
+</div>
+
+<p></p>

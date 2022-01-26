@@ -1,0 +1,18 @@
+<div class="container my-5" *ngFor="let blog of blogs">
+  <div class="row m-3">
+    <div class="col-md-7">
+      <img [src]="blog.blogImg" alt="img" class="w-100 rounded img-fluid" />
+    </div>
+    <div class="col-md-5">
+      <h2>{{ blog.blogTitle }}</h2>
+      <p>{{ blog.blogText }}</p>
+      <div class="bloggerData d-flex align-items-center justify-conten-center">
+        <img [src]="blog.bloggerImg" alt="img" class="rounded-circle" />
+        <div class="mx-3">
+          <strong>{{ blog.bloggerName }}</strong>
+          <p>{{ blog.bloggerJob }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
