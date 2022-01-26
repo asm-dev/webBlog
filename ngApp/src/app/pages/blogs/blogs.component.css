@@ -3,3 +3,8 @@
   height: 60px;
   object-fit: cover;
 }
+
+.col-md-7 img {
+  max-height: 400px;
+  object-fit: cover;
+}
