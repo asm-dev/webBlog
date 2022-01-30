@@ -1,0 +1,3 @@
+.navbar-nav a:active, a:focus {
+  border-bottom: 2px solid black;
+}
